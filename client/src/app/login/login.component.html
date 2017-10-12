@@ -1,0 +1,20 @@
+<div id="login-page">
+	<div class="container">
+		<form class="form-login" #userForm="ngForm" name="userForm">
+			<h2 class="form-login-heading">sign in now</h2>
+			<div class="login-wrap">
+				<alert></alert>
+				<input type="text" class="form-control" [(ngModel)]="username" name="username" placeholder="User ID" autofocus style="width:100%;">
+				<br>
+				<input type="password" class="form-control" [(ngModel)]="password" name="password" placeholder="Password" style="width:100%;">
+				<label class="checkbox">
+		                <span class="pull-right">
+		                    <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>		
+		                </span>
+		            </label>
+				<button class="btn btn-theme btn-block" (click)="login()" type="button"><i class="fa fa-lock"></i> SIGN IN</button>
+				<hr>
+			</div>
+		</form>
+
+	</div>

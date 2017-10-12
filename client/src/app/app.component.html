@@ -1,0 +1,17 @@
+ <section id="container" >
+   <app-header *ngIf = "isLoggedIn()"></app-header>
+   <aside *ngIf = "isLoggedIn()">
+     <app-nav-bar> </app-nav-bar>
+   </aside>
+ <section id="main-content">
+     <router-outlet></router-outlet>
+ </section>
+ <footer class="site-footer" *ngIf = "isLoggedIn()">
+          <div class="text-center">
+              © 2017 Mohammed Sajadh N.A, All Rights Reserved
+              <a href="#" class="go-top">
+                  <i class="fa fa-angle-up"></i>
+              </a>
+          </div>
+</footer>
+</section>
